@@ -86,6 +86,7 @@ Business-level meaning
 
 # 🧱 Data Warehouse Layers Structure
 
+
 sql-datawarehouse/
 │
 ├── 01_bronze/
@@ -111,7 +112,7 @@ sql-datawarehouse/
 
 The Gold layer follows a Star Schema for analytics.
 
-⭐ Example Tables
+⭐ Tables
 
 
 dim_customer

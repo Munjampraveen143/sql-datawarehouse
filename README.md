@@ -2,8 +2,9 @@
 Welcome to the Data Warehouse and Analytics Project repository! 🚀
 This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
 
- 📦 SQL Data Warehouse Project (Bronze → Silver → Gold)
-📌 Project Overview
+ # 📦 SQL Data Warehouse Project (Bronze → Silver → Gold)
+ 
+# 📌 Project Overview
 
 This project is an end-to-end Data Warehouse implementation using the Medallion Architecture (Bronze, Silver, Gold).
 
@@ -17,8 +18,10 @@ Build business-ready data models for reporting & analytics
 
 This repository contains SQL scripts, data models, ETL logic, and documentation for building a scalable Data Warehouse.
 
-🏗️ Architecture (Bronze, Silver, Gold)
-🥉 Bronze Layer (Raw Data)
+
+# #🏗️ Architecture (Bronze, Silver, Gold)
+
+# 🥉 Bronze Layer (Raw Data)
 
 ✅ Stores data exactly as received from source systems.
 
@@ -28,7 +31,8 @@ Raw format (CSV / JSON / API / DB Extract)
 
 Used for auditing & debugging
 
-Purpose:
+
+# Purpose:
 
 Maintain raw history
 
@@ -36,7 +40,8 @@ Data traceability
 
 Easy reprocessing
 
-🥈 Silver Layer (Cleaned & Standardized)
+
+# 🥈 Silver Layer (Cleaned & Standardized)
 
 ✅ Data is cleaned and standardized.
 
@@ -56,7 +61,8 @@ Trusted clean dataset
 
 Consistent schema for analysis
 
-🥇 Gold Layer (Business-Ready Data)
+
+# 🥇 Gold Layer (Business-Ready Data)
 
 ✅ Final layer used for reporting and dashboards.
 
@@ -68,7 +74,8 @@ Aggregated KPIs
 
 Optimized for Power BI / Tableau
 
-Purpose:
+
+# Purpose:
 
 Analytics-ready datasets
 
@@ -76,7 +83,9 @@ Fast reporting performance
 
 Business-level meaning
 
-🧱 Data Warehouse Layers Structure
+
+# 🧱 Data Warehouse Layers Structure
+
 sql-datawarehouse/
 │
 ├── 01_bronze/
@@ -98,36 +107,29 @@ sql-datawarehouse/
 │
 └── README.md
 
-📊 Data Model (Gold Layer)
+# 📊 Data Model (Gold Layer)
 
 The Gold layer follows a Star Schema for analytics.
 
 ⭐ Example Tables
 
-Dimensions
 
 dim_customer
 
 dim_product
 
-dim_date
+dim_fact_sales
 
-dim_store
 
-Facts
 
-fact_sales
 
-fact_orders
-
-fact_revenue
-
-🔄 ETL Flow (End-to-End)
+ # # 🔄 ETL Flow (End-to-End)
 Step 1: Load Bronze (Raw)
 
 Extract data from source
 
 Load into Bronze tables without modification
+
 
 Step 2: Transform into Silver
 
@@ -139,6 +141,7 @@ Remove duplicates
 
 Apply datatype conversions
 
+
 Step 3: Build Gold for Analytics
 
 Create fact and dimension tables
@@ -147,7 +150,8 @@ Generate business KPIs
 
 Create views for reporting
 
-🛠️ Tools & Technologies Used
+
+# 🛠️ Tools & Technologies Used
 
 SQL Server / MySQL / PostgreSQL (based on your setup)
 
@@ -157,7 +161,7 @@ Star Schema Modeling
 
 Power BI / Tableau (optional for reporting)
 
-📌 Key Features
+# 📌 Key Features
 
 ✅ Medallion Architecture (Bronze, Silver, Gold)
 ✅ Clean structured data pipeline
@@ -165,7 +169,8 @@ Power BI / Tableau (optional for reporting)
 ✅ Reporting-ready dataset
 ✅ Scalable and reusable SQL scripts
 
-📈 Example Business KPIs (Gold Layer)
+
+# 📈 Example Business KPIs (Gold Layer)
 
 Total Sales
 
@@ -179,7 +184,7 @@ Customer Retention
 
 Monthly Growth %
 
-🚀 How to Run This Project
+# 🚀 How to Run This Project
 1️⃣ Create Database
 
 Run the database creation script (if included).
@@ -204,13 +209,11 @@ Customers
 
 Products
 
-Orders
-
 Sales Transactions
 
-(You can update this section with your dataset name or source.)
 
-📌 Future Enhancements
+
+# 📌 Future Enhancements
 
 Add incremental loading (CDC)
 
@@ -225,5 +228,5 @@ Add data quality checks
 👨‍💻 Author
 
 Munjam Praveen Kumar
-📌 GitHub: [Your GitHub Profile Link]
-📌 LinkedIn: [Your LinkedIn Link
+📌 GitHub: [https://github.com/Munjampraveen143/sql-datawarehouse.git]
+📌 LinkedIn: [https://www.linkedin.com/in/munjam-praveen-kumar-5a9023355/]

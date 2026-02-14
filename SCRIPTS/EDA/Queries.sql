@@ -72,3 +72,27 @@ left join gold.fact_sales as f
 on c.customer_key = f.customer_key
 group by c.country
 order by total_sold desc;
+
+
+-- top 10 customers who have genarated highest revenue
+select  TOP 10 c.customer_key,
+c.first_name,
+sum(f.sales_amount) as total_revenue
+from gold.dim_customers as c
+left join gold.fact_sales as f
+on c.customer_key = f.customer_key
+group by c.customer_key,
+c.first_name
+order by total_revenue desc;
+
+
+-- to display all measures as in one report
+SELECT  'Total Soles' as measure_name,SUM(sales_amount) as measure_values from gold.fact_sales
+union all
+SELECT  'Total Qty' as measure_name,SUM(quantity) as measure_value from gold.fact_sales
+union all
+SELECT 'Total Price' as measure_name, SUM(price) as measure_value from gold.fact_sales
+union all
+SELECT 'Total Orders' as measure_name, count(distinct order_number) as measure_value from gold.fact_sales
+union all
+SELECT 'Avg Price' as measure_name, avg(price) as measure_value from gold.fact_sales

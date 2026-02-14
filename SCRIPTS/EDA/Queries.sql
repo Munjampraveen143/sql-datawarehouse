@@ -73,6 +73,17 @@ on c.customer_key = f.customer_key
 group by c.country
 order by total_sold desc;
 
+-- Which 5 products generate the Highest revenue ?
+
+SELECT top 5 p.product_name,
+sum(f.sales_amount) as total_sales_prod
+from gold.dim_products p
+left join gold.fact_sales f
+on p.product_key = f.product_key
+group by p.product_name
+order by sum(f.sales_amount) desc;
+
+
 
 -- top 10 customers who have genarated highest revenue
 select  TOP 10 c.customer_key,

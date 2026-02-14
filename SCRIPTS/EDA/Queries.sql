@@ -98,7 +98,7 @@ order by total_revenue desc;
 
 
 -- to display all measures as in one report
-SELECT  'Total Soles' as measure_name,SUM(sales_amount) as measure_values from gold.fact_sales
+SELECT  'Total Sales' as measure_name,SUM(sales_amount) as measure_values from gold.fact_sales
 union all
 SELECT  'Total Qty' as measure_name,SUM(quantity) as measure_value from gold.fact_sales
 union all
